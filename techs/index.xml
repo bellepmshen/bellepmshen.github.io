@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Techs on Belle Shen</title>
+    <link>https://bellepmshen.github.io/techs/</link>
+    <description>Recent content in Techs on Belle Shen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Edna West</copyright>
+    <lastBuildDate>Sat, 02 May 2020 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/techs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradient Boosting Tree</title>
+      <link>https://bellepmshen.github.io/techs/gradient-boosting-tree/</link>
+      <pubDate>Sat, 02 May 2020 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/gradient-boosting-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://bellepmshen.github.io/techs/logistic-regression/</link>
+      <pubDate>Sat, 02 May 2020 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/logistic-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Forest</title>
+      <link>https://bellepmshen.github.io/techs/random-forest/</link>
+      <pubDate>Sat, 02 May 2020 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/random-forest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sklearn</title>
+      <link>https://bellepmshen.github.io/techs/sklearn/</link>
+      <pubDate>Sat, 02 May 2020 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/sklearn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XGBoost</title>
+      <link>https://bellepmshen.github.io/techs/xgboost/</link>
+      <pubDate>Sat, 02 May 2020 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/xgboost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://bellepmshen.github.io/techs/python/</link>
+      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

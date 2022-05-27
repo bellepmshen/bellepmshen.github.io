@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random Forest on Belle Shen</title>
+    <link>https://bellepmshen.github.io/techs/random-forest/</link>
+    <description>Recent content in Random Forest on Belle Shen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Edna West</copyright>
+    <lastBuildDate>Sat, 02 May 2020 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/techs/random-forest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APS Predictor</title>
+      <link>https://bellepmshen.github.io/portfolio/aps_truck/</link>
+      <pubDate>Sat, 02 May 2020 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/portfolio/aps_truck/</guid>
+      <description>The purpose of this prediction model is to establish a unified method to assist in loan officers’ evaluation, incorporating a wide variety of data often overlooked. The prediction model will allow officers to process 2x to 3x the amount of applications with high degree of confidence, or free up their time to evaluate more complicated (potentially higher margin) cases while letting the model automatically approve the obvious prime applicants. The overall default exposure of the company can thus be controlled yet systematically and confidently managed to lower overtime.</description>
+    </item>
+    
+    <item>
+      <title>Credit Default Risk Predictor</title>
+      <link>https://bellepmshen.github.io/portfolio/loan-credit/</link>
+      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/portfolio/loan-credit/</guid>
+      <description>The purpose of this prediction model is to establish a unified method to assist in loan officers’ evaluation, incorporating a wide variety of data often overlooked. The prediction model will allow officers to process 2x to 3x the amount of applications with high degree of confidence, or free up their time to evaluate more complicated (potentially higher margin) cases while letting the model automatically approve the obvious prime applicants. The overall default exposure of the company can thus be controlled yet systematically and confidently managed to lower overtime.</description>
+    </item>
+    
+  </channel>
+</rss>
