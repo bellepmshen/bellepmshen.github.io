@@ -14,8 +14,10 @@
       <pubDate>Fri, 10 Jun 2022 19:47:09 +0200</pubDate>
       
       <guid>https://bellepmshen.github.io/portfolio/time_series_fb/</guid>
-      <description>coming soon
-photo credit: https://www.defensivedriving.com/blog/share-the-road-how-to-drive-safely-around-big-trucks/</description>
+      <description>Project Goal
+The goal of this project was to build an ARIMA (autoregressive integrated moving average) model to forecast the stock open price of FB on Aug. 31, 2021 and the model was trained by the stock price from Aug 1 to 30, 2021.
+Library
+We used Pandas for data analysis, matplotlib for visualization, NumPy &amp;amp; scikit-learn for model evaluation, and statsmodels for the ARIMA algorithm and Augmented Dickey-Fuller test.</description>
     </item>
     
     <item>
