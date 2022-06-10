@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bellepmshen.github.io/techs/arima/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://bellepmshen.github.io/techs/augmented-dickey-fuller-test/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://bellepmshen.github.io/portfolio/time_series_fb/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://bellepmshen.github.io/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://bellepmshen.github.io/portfolio/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://bellepmshen.github.io/techs/statsmodels/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://bellepmshen.github.io/techs/</loc>
+    <lastmod>2022-06-10T19:47:09+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://bellepmshen.github.io/portfolio/aps_truck/</loc>
     <lastmod>2020-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -12,17 +47,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://bellepmshen.github.io/</loc>
-    <lastmod>2020-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://bellepmshen.github.io/techs/logistic-regression/</loc>
-    <lastmod>2020-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://bellepmshen.github.io/portfolio/</loc>
     <lastmod>2020-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -33,11 +58,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://bellepmshen.github.io/techs/sklearn/</loc>
-    <lastmod>2020-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://bellepmshen.github.io/techs/</loc>
     <lastmod>2020-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

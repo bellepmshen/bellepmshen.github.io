@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statsmodels on Belle Shen</title>
+    <link>https://bellepmshen.github.io/techs/statsmodels/</link>
+    <description>Recent content in statsmodels on Belle Shen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Edna West</copyright>
+    <lastBuildDate>Fri, 10 Jun 2022 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/techs/statsmodels/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Facebook Stock Price Forecasting</title>
+      <link>https://bellepmshen.github.io/portfolio/time_series_fb/</link>
+      <pubDate>Fri, 10 Jun 2022 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/portfolio/time_series_fb/</guid>
+      <description>coming soon
+photo credit: https://www.defensivedriving.com/blog/share-the-road-how-to-drive-safely-around-big-trucks/</description>
+    </item>
+    
+  </channel>
+</rss>

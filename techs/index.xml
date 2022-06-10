@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Edna West</copyright>
-    <lastBuildDate>Sat, 02 May 2020 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/techs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/techs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARIMA</title>
+      <link>https://bellepmshen.github.io/techs/arima/</link>
+      <pubDate>Fri, 10 Jun 2022 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/arima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Augmented Dickey-Fuller test</title>
+      <link>https://bellepmshen.github.io/techs/augmented-dickey-fuller-test/</link>
+      <pubDate>Fri, 10 Jun 2022 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/augmented-dickey-fuller-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statsmodels</title>
+      <link>https://bellepmshen.github.io/techs/statsmodels/</link>
+      <pubDate>Fri, 10 Jun 2022 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/techs/statsmodels/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Gradient Boosting Tree</title>
       <link>https://bellepmshen.github.io/techs/gradient-boosting-tree/</link>
