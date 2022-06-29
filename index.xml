@@ -63,15 +63,6 @@ photo credit: https://www.defensivedriving.com/blog/share-the-road-how-to-drive-
     </item>
     
     <item>
-      <title>Archetypes management</title>
-      <link>https://bellepmshen.github.io/post/archetypes/</link>
-      <pubDate>Thu, 02 May 2019 19:25:30 +0200</pubDate>
-      
-      <guid>https://bellepmshen.github.io/post/archetypes/</guid>
-      <description>&lt;p&gt;The archetypes are defined in the &lt;code&gt;archetypes&lt;/code&gt; folder, for both post and portfolio.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Shortcodes</title>
       <link>https://bellepmshen.github.io/post/shortcodes/</link>
       <pubDate>Mon, 29 Apr 2019 16:18:12 +0100</pubDate>
@@ -98,6 +89,15 @@ photo credit: https://www.defensivedriving.com/blog/share-the-road-how-to-drive-
       <guid>https://bellepmshen.github.io/post/define-specific-og-image/</guid>
       <description>Within any page, you can add in the FrontMatter a images array that will be used to define a specific Open Graph image.
 For example, see content/_index.md page:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://bellepmshen.github.io/post/archetypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bellepmshen.github.io/post/archetypes/</guid>
+      <description>&lt;!-- The archetypes are defined in the `archetypes` folder, for both post and portfolio. --&gt;</description>
     </item>
     
   </channel>
