@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Edna West</copyright>
-    <lastBuildDate>Fri, 10 Jun 2022 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 09:37:55 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Time-Series ARIMA Model for Stock Market Forecast in Python</title>
+      <link>https://bellepmshen.github.io/post/getting-started/</link>
+      <pubDate>Thu, 30 Jun 2022 09:37:55 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/post/getting-started/</guid>
+      <description>&lt;p&gt;Here is the content in this article:&lt;/p&gt;
+&lt;h3 id=&#34;content&#34;&gt;Content:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What is ARIMA?&lt;/li&gt;
+&lt;li&gt;Stock Market Forecast Codes in Python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are some details to help you getting started with this theme.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Facebook/Meta Stock Price Forecasting</title>
       <link>https://bellepmshen.github.io/portfolio/time_series_fb/</link>
@@ -28,15 +43,6 @@ We used Pandas for data analysis, matplotlib for visualization, NumPy &amp;amp; 
       <guid>https://bellepmshen.github.io/portfolio/aps_truck/</guid>
       <description>coming soon
 photo credit: https://www.defensivedriving.com/blog/share-the-road-how-to-drive-safely-around-big-trucks/</description>
-    </item>
-    
-    <item>
-      <title>Getting started</title>
-      <link>https://bellepmshen.github.io/post/getting-started/</link>
-      <pubDate>Fri, 03 May 2019 09:37:55 +0200</pubDate>
-      
-      <guid>https://bellepmshen.github.io/post/getting-started/</guid>
-      <description>&lt;p&gt;Here are some details to help you getting started with this theme.&lt;/p&gt;</description>
     </item>
     
     <item>
