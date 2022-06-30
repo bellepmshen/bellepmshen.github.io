@@ -14,13 +14,14 @@
       <pubDate>Thu, 30 Jun 2022 09:37:55 +0200</pubDate>
       
       <guid>https://bellepmshen.github.io/post/getting-started/</guid>
-      <description>&lt;p&gt;Here is the content in this article:&lt;/p&gt;
-&lt;h3 id=&#34;content&#34;&gt;Content:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;What is ARIMA?&lt;/li&gt;
-&lt;li&gt;Stock Market Forecast Codes in Python&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here are some details to help you getting started with this theme.&lt;/p&gt;</description>
+      <description>Here is the content in this article:
+Content:
+  What is ARIMA?
+ Stock Market Forecast Codes in Python
+  What is ARIMA?
+ ARIMA stands for &amp;ldquo;Autoregressive Integrated Moving Average&amp;rdquo; and it is an algorithm for forecasting time-series data, such as predicting stock market price, or forecasting daily temperature.
+ARIMA is composed of three parts:
+I. AR (Autoregression): - It is a linear combination of lagged dependent variables i.</description>
     </item>
     
   </channel>

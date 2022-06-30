@@ -30,7 +30,7 @@
   <meta itemprop="name" content="Build a Time-Series ARIMA Model for Stock Market Forecast in Python">
 <meta itemprop="description" content="Getting started with personal-web"><meta itemprop="datePublished" content="2022-06-30T09:37:55+02:00" />
 <meta itemprop="dateModified" content="2022-06-30T09:37:55+02:00" />
-<meta itemprop="wordCount" content="188">
+<meta itemprop="wordCount" content="98">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -41,7 +41,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile POST" class="rounded-logo">
+        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile HOME" class="rounded-logo">
       </a>
     </div>
     <h2>Belle Shen</h2>
@@ -112,7 +112,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile POST" class="rounded-logo">
+          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile HOME" class="rounded-logo">
         </a>
       </div>
       <h2>Belle Shen</h2>
@@ -227,19 +227,32 @@
 </div>
 
 <p>Here is the content in this article:</p>
-<h3 id="content">Content:</h3>
+<h3 id="contentbr">Content:<br></h3>
 <ul>
-<li>What is ARIMA?</li>
-<li>Stock Market Forecast Codes in Python</li>
+<li>What is ARIMA?<br></li>
+<li>Stock Market Forecast Codes in Python<br></li>
 </ul>
-<p>Here are some details to help you getting started with this theme.</p>
-<p>We&rsquo;ll assume here that you have a good understanding of Hugo and its structure. If you have any doubt, check the <a href="https://gohugo.io/documentation/" title="Hugo documentation">Hugo documentation</a>; it is pretty good and the community quite active! Thank you so much by the way! 💪</p>
-<p>The first thing to do when starting your own website is to <strong>copy the content of exampleSite</strong> in your own root folder. This way, you can have a sample of <code>config.toml</code> file and a first structure.</p>
-<p><strong>Don&rsquo;t forget to change the <code>baseURL</code> param to avoid deployment failures</strong></p>
-<p>Browse the articles in the <code>content/post</code> folder to get any help during setup or using the theme. Please, <a href="https://baptistej.com" title="contact me">contact me</a> if you have any problem using the them.</p>
-<p>Then <strong>configure the <code>config.toml</code> file</strong> to match your need.</p>
-<p>You should then write you home (<code>/content/_index.md</code>), create your first project (see the <a href="/content/post/portfolio-definition.md" title="portfolio definition">portfolio definition</a> and your first blogpost.</p>
-<p>Lastly, define the menu in the sidebar: you can get some help in the <code>/content/post/manage-your-menu.md</code> file.</p>
+<h3 id="what-is-arimabr">What is ARIMA?<br></h3>
+<p>ARIMA stands for <font><i>&ldquo;Autoregressive Integrated Moving Average&rdquo;</i></font> and it is an algorithm for forecasting time-series data, such as predicting stock market price, or forecasting daily temperature.<br></p>
+<p>ARIMA is composed of three parts:<br></p>
+<p>I. AR (Autoregression): <br>
+- It is a linear combination of lagged dependent variables i.e., observations
+- Parameter Notation: <font><i>&ldquo;p&rdquo;</i></font>, the number of lag orders
+- Formula:
+$$
+\begin {align}
+Y_t;
+&amp;=;
+\beta;+;
+\alpha_1 Y_{t-1};+;
+\alpha_2 Y_{t-2};+;
+&hellip;+;
+\alpha_p Y_{t-p};\\
+&amp;= \beta;+;
+\sum_{i=1}^{p} \alpha_{i}Y_{t-i};
+\end {align}
+$$</p>
+
 
     </main>
   </div>
