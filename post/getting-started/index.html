@@ -23,14 +23,14 @@
 <meta property="og:description" content="Getting started with personal-web" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bellepmshen.github.io/post/getting-started/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-06-30T09:37:55+02:00" />
-<meta property="article:modified_time" content="2022-06-30T09:37:55+02:00" />
+<meta property="article:published_time" content="2022-07-01T09:37:55+02:00" />
+<meta property="article:modified_time" content="2022-07-01T09:37:55+02:00" />
 
 
   <meta itemprop="name" content="Build a Time-Series ARIMA Model for Stock Market Forecast in Python">
-<meta itemprop="description" content="Getting started with personal-web"><meta itemprop="datePublished" content="2022-06-30T09:37:55+02:00" />
-<meta itemprop="dateModified" content="2022-06-30T09:37:55+02:00" />
-<meta itemprop="wordCount" content="98">
+<meta itemprop="description" content="Getting started with personal-web"><meta itemprop="datePublished" content="2022-07-01T09:37:55+02:00" />
+<meta itemprop="dateModified" content="2022-07-01T09:37:55+02:00" />
+<meta itemprop="wordCount" content="804">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -41,7 +41,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile HOME" class="rounded-logo">
+        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile POST" class="rounded-logo">
       </a>
     </div>
     <h2>Belle Shen</h2>
@@ -112,7 +112,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile HOME" class="rounded-logo">
+          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile POST" class="rounded-logo">
         </a>
       </div>
       <h2>Belle Shen</h2>
@@ -211,7 +211,7 @@
   </svg>
 </div>
 
-  <span>1 minutes</span>
+  <span>4 minutes</span>
 </div>
 
 <div class="published-date">
@@ -223,36 +223,170 @@
   </svg>
 </div>
 
-  <span>June 30, 2022</span>
+  <span>July 1, 2022</span>
 </div>
 
-<p>Here is the content in this article:</p>
-<h3 id="contentbr">Content:<br></h3>
-<ul>
-<li>What is ARIMA?<br></li>
-<li>Stock Market Forecast Codes in Python<br></li>
-</ul>
+<p>In this articel, ARIMA algorithm will be introduced and we will talk about how to build a time-series ARIMA model in Python to make real-time forecast for stock market.</p>
+<br>
+Here is the content in this article:
+<h3 id="contentbr">Content:<br/></h3>
+<br>
+- What is ARIMA?<br>
+- Stock Market Forecast Codes in Python<br>
 <h3 id="what-is-arimabr">What is ARIMA?<br></h3>
 <p>ARIMA stands for <font><i>&ldquo;Autoregressive Integrated Moving Average&rdquo;</i></font> and it is an algorithm for forecasting time-series data, such as predicting stock market price, or forecasting daily temperature.<br></p>
 <p>ARIMA is composed of three parts:<br></p>
-<p>I. AR (Autoregression): <br>
-- It is a linear combination of lagged dependent variables i.e., observations
-- Parameter Notation: <font><i>&ldquo;p&rdquo;</i></font>, the number of lag orders
-- Formula:
-$
-\begin {align}
-Y_t;
-&amp;=;
-\beta;+;
-\alpha_1 Y_{t-1};+;
-\alpha_2 Y_{t-2};+;
-&hellip;+;
-\alpha_p Y_{t-p};\\
-&amp;= \beta;+;
-\sum_{i=1}^{p} \alpha_{i}Y_{t-i};
-\end {align}
-$</p>
+<p><strong>I. AR (Autoregression):</strong> <br>
+<br>
+- It is a linear combination of lagged dependent variables i.e., observations <br>
+- Parameter Notation: <font><i>&ldquo;p&rdquo;</i></font>, the number of lag orders <br>
+- Formula:</p>
+<pre><code>        <figure><img src="/post/images/AR_formula.png"/>
+</figure>
 
+</code></pre>
+<p><strong>II. MA (Moving Average):</strong><br>
+<br>
+- It is a linear combination of lagged error terms between actual and forecast values<br>
+- Parameter Notation: <font><i>&ldquo;q&rdquo;</i></font>, the number of lagged forecast errors<br>
+- Formula:<br></p>
+<pre><code>        <figure><img src="/post/images/MA_formula.png"/>
+</figure>
+
+</code></pre>
+<p><strong>III. I (Integrated):</strong><br>
+<br>
+- The differences between original observations and lagged ones to make the time series data stationary.<br>
+- Parameter Notation: <font><i>&ldquo;d&rdquo;</i></font>, the number of difference levels <br>
+- Formula (take the 1st difference level as an example, i.e., d = 1):<br></p>
+<pre><code>        <figure><img src="/post/images/integrated_formula.png"/>
+</figure>
+
+</code></pre>
+<h3 id="stock-market-forecast-codes-in-pythonbr">Stock Market Forecast Codes in Python:<br></h3>
+<p>In this session, we take Facebook/Meta data via yfinace API to build an ARIMA model to forecast the next minute stock price.<br></p>
+<p>Here is the process flow of codes:</p>
+<pre><code>    <figure><img src="/post/images/process_flow.png"/>
+</figure>
+
+</code></pre>
+<p><strong>I. Import libraries:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">time_series</span> <span class="kn">import</span> <span class="n">Time_Series</span>
+</span></span></code></pre></div><br>
+The datetime library will let us obtain the duration of time from retrieving data to forecast the next minute stock price.<br>
+<p>The time_series module contains the functions we need for making the prediction on stock market price.<br></p>
+<br>
+<p><strong>II. Instantiate the class and get 7-day stock price:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">ts</span> <span class="o">=</span> <span class="n">Time_Series</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">stock</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><br>
+By using yfinance API, we can obtain 7-day of stock data by minute.<br>
+<br>
+<p><strong>III. Train &amp; Test Split:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span></code></pre></div><br>
+In a time-series problem, the data are in sequence, which means we will not split the data into train and test randomly, so here we take the last 50 observations as our test data due to computer power constraint.<br>
+<br>
+<p><strong>IV. Log transform:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">train_1</span><span class="p">,</span> <span class="n">test_1</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">make_log</span><span class="p">()</span>
+</span></span></code></pre></div><br>
+We take natural logarithm (log(1+x)) to flatten the fluctuation.<br>
+<br>
+<p><strong>V. Get (p, d, q) permutation:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">params</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">generate_params</span><span class="p">()</span>
+</span></span></code></pre></div><br>
+We generate different combinations of (p, d, q) for hyperparameters tuning to find out the smallest RMSE (Root Mean Square Errors).<br>
+<br>
+<p><strong>VI. Hyperparameters Tuning:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">rmse_box</span><span class="p">,</span> <span class="n">best_pdq</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">rmse_calculation</span><span class="p">()</span>
+</span></span></code></pre></div><br>
+How to train a time-series model?<br>
+<br>
+When building a time-series model, we get a forecast for the next timestamp based on the data from the previous timestamps which means, your train data size will gradually increase for each iterations (see the detail codes in the GitHub link below) cause we want to forecast the "next timestamp." <br>
+<p>For example, your last timestamp of train data is &ldquo;2022-06-27 15:56:00&rdquo;, and you build a model from the train data, so you get a forecast for &ldquo;2022-06-27 15:57:00.&rdquo;  What if we want to see the forecast of &ldquo;2022-06-27 15:58:00&rdquo;?
+Then, you will add the acutal observation of &ldquo;2022-06-27 15:57:00&rdquo; to train data, and this timestamp will be your last observation in the train data.  You&rsquo;ll build a model from this &ldquo;new&rdquo; train data, and get a forecast for the next minute which is &ldquo;2022-06-27 15:58:00.&quot;<br></p>
+<p>Here we use the &ldquo;forecast()&rdquo; function from ARIMA to get &ldquo;out-of-sample&rdquo; forecast.<br></p>
+<p>Thus, the code above performs hyperparameters tunings to iterate different permutations of (p, d, q) and to see which permutation yields the smallest RMSE.<br></p>
+<br>
+<p><strong>VII. Build final model:</strong><br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ts</span><span class="o">.</span><span class="n">final_training</span><span class="p">()</span>
+</span></span></code></pre></div><br>
+We train the whole 7-day data with the best (p, d, q) permutation we obtain from hyperparameters tuning job to get a forecast for the next minute (refer to the picture below)!
+<pre><code>    <figure><img src="/post/images/forecast_result.png"/>
+</figure>
+
+</code></pre>
+<p>Below are the full codes:<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">execute</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;This function is to execute all the functions to get 
+</span></span></span><span class="line"><span class="cl"><span class="s2">the next minute open price.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Returns
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">-------
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">str
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">a message to show the next minute open price
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># create the beginning timestamp for calculating </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># the runtime</span>
+</span></span><span class="line"><span class="cl"><span class="n">t1</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># instantiate the class</span>
+</span></span><span class="line"><span class="cl"><span class="n">ts</span> <span class="o">=</span> <span class="n">Time_Series</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># get the 7-day of stock data by minute</span>
+</span></span><span class="line"><span class="cl"><span class="n">stock</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># train and test split</span>
+</span></span><span class="line"><span class="cl"><span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># take log on both of train &amp; test data to flatten </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#the fluctuation</span>
+</span></span><span class="line"><span class="cl"><span class="n">train_1</span><span class="p">,</span> <span class="n">test_1</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">make_log</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># generate the p, d, q permutation</span>
+</span></span><span class="line"><span class="cl"><span class="n">params</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">generate_params</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># hyperparameters tuning to get the smallest RMSE </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># with corresponding p, d, q</span>
+</span></span><span class="line"><span class="cl"><span class="n">rmse_box</span><span class="p">,</span> <span class="n">best_pdq</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">rmse_calculation</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># train the whole data with the best p, d, q obtained </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># from hyperparameters tuning and show the next minute </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># forecast</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">ts</span><span class="o">.</span><span class="n">final_training</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># get the timestamp to obtain the timedelta of runtime</span>
+</span></span><span class="line"><span class="cl"><span class="n">t2</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># get the runtime</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;total processing time: </span><span class="si">{</span><span class="p">(</span><span class="n">t2</span><span class="o">-</span><span class="n">t1</span><span class="p">)</span><span class="o">.</span><span class="n">seconds</span><span class="si">}</span><span class="s2"> seconds&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># execute the function</span>
+</span></span><span class="line"><span class="cl"><span class="n">execute</span><span class="p">()</span>
+</span></span></code></pre></div><br>
+<p><font color = "blue"><b>Full codes can be found
+<a href="https://github.com/bellepmshen/time_series_real_time_forecast">here!</a><br></b></font></p>
+<h3 id="references">References:</h3>
+<pre>
+- <a href="https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/">https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/</a>
+- <a href="https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/#:~:text=ARIMA%20is%20an%20acronym%20that,structures%20in%20time%20series%20data.">https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python#:~:text=ARIMA%20is%20an%20acronym%20that,structures%20in%20time%20series%20data.</a>
+- <a href="https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average">https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average</a>
+- <a href="https://faculty.fuqua.duke.edu/~rnau/Decision411_2007/411arim.htm">https://faculty.fuqua.duke.edu/~rnau/Decision411_2007/411arim.htm</a>
+- <a href="https://online.stat.psu.edu/stat510/book/export/html/665">https://online.stat.psu.edu/stat510/book/export/html/665</a>
+</pre>
 
     </main>
   </div>
