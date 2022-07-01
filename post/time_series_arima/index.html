@@ -30,7 +30,7 @@
   <meta itemprop="name" content="Build a Time-Series ARIMA Model for Stock Market Forecast in Python">
 <meta itemprop="description" content="Getting started with personal-web"><meta itemprop="datePublished" content="2022-07-01T09:37:55+02:00" />
 <meta itemprop="dateModified" content="2022-07-01T09:37:55+02:00" />
-<meta itemprop="wordCount" content="804">
+<meta itemprop="wordCount" content="809">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -41,7 +41,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile POST" class="rounded-logo">
+        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile HOME" class="rounded-logo">
       </a>
     </div>
     <h2>Belle Shen</h2>
@@ -112,7 +112,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile POST" class="rounded-logo">
+          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile HOME" class="rounded-logo">
         </a>
       </div>
       <h2>Belle Shen</h2>
@@ -305,7 +305,7 @@ How to train a time-series model?<br>
 <br>
 When building a time-series model, we get a forecast for the next timestamp based on the data from the previous timestamps which means, your train data size will gradually increase for each iterations (see the detail codes in the GitHub link below) cause we want to forecast the "next timestamp." <br>
 <p>For example, your last timestamp of train data is &ldquo;2022-06-27 15:56:00&rdquo;, and you build a model from the train data, so you get a forecast for &ldquo;2022-06-27 15:57:00.&rdquo;  What if we want to see the forecast of &ldquo;2022-06-27 15:58:00&rdquo;?
-Then, you will add the acutal observation of &ldquo;2022-06-27 15:57:00&rdquo; to train data, and this timestamp will be your last observation in the train data.  You&rsquo;ll build a model from this &ldquo;new&rdquo; train data, and get a forecast for the next minute which is &ldquo;2022-06-27 15:58:00.&quot;<br></p>
+Then, you will add the actual observation of &ldquo;2022-06-27 15:57:00&rdquo; to train data, and this timestamp will be your last observation in the train data.  You&rsquo;ll build a model from this &ldquo;new&rdquo; train data, and get a forecast for the next minute which is &ldquo;2022-06-27 15:58:00.&quot;<br></p>
 <p>Here we use the &ldquo;forecast()&rdquo; function from ARIMA to get &ldquo;out-of-sample&rdquo; forecast.<br></p>
 <p>Thus, the code above performs hyperparameters tunings to iterate different permutations of (p, d, q) and to see which permutation yields the smallest RMSE.<br></p>
 <br>
@@ -329,7 +329,8 @@ We train the whole 7-day data with the best (p, d, q) permutation we obtain from
 </span></span></span><span class="line"><span class="cl"><span class="s2">
 </span></span></span><span class="line"><span class="cl"><span class="s2">str
 </span></span></span><span class="line"><span class="cl"><span class="s2">
-</span></span></span><span class="line"><span class="cl"><span class="s2">a message to show the next minute open price
+</span></span></span><span class="line"><span class="cl"><span class="s2">a message to show the next minute open price &amp; the total processing 
+</span></span></span><span class="line"><span class="cl"><span class="s2">time
 </span></span></span><span class="line"><span class="cl"><span class="s2">
 </span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">
