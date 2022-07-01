@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 01 Jul 2022 09:37:55 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build a Time-Series ARIMA Model for Stock Market Forecast in Python</title>
-      <link>https://bellepmshen.github.io/post/getting-started/</link>
+      <link>https://bellepmshen.github.io/post/time_series_arima/</link>
       <pubDate>Fri, 01 Jul 2022 09:37:55 +0200</pubDate>
       
-      <guid>https://bellepmshen.github.io/post/getting-started/</guid>
+      <guid>https://bellepmshen.github.io/post/time_series_arima/</guid>
       <description>&lt;p&gt;In this article, ARIMA algorithm will be introduced and we will talk about how to build a time-series ARIMA model in Python to make real-time forecast for stock market.&lt;/p&gt;</description>
     </item>
     
