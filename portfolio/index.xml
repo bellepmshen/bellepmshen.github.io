@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Edna West</copyright>
-    <lastBuildDate>Fri, 10 Jun 2022 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 19:47:09 +0200</lastBuildDate><atom:link href="https://bellepmshen.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Language Translator</title>
+      <link>https://bellepmshen.github.io/portfolio/chatgpt_translator/</link>
+      <pubDate>Mon, 20 Mar 2023 19:47:09 +0200</pubDate>
+      
+      <guid>https://bellepmshen.github.io/portfolio/chatgpt_translator/</guid>
+      <description>Project Goal
+The goal of this project was to translate a given PDF file (ex: academic paper) into the language you&amp;rsquo;d like by using ChatGPT 3.5 via API call.
+Note: When this project was developed, ChatGPT 4 API call was unavailable.
+Library
+Here are the main libraries I used for this projects: I used pypdfium2 for extracting texts from a PDF file, NLTK for tokenizing sentences, Pandas for saving the API call log mainly, Pickle for saving the translation results, openai for API call.</description>
+    </item>
+    
     <item>
       <title>Facebook/Meta Stock Price Forecasting</title>
       <link>https://bellepmshen.github.io/portfolio/time_series_fb/</link>

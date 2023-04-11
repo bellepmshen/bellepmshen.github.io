@@ -8,7 +8,7 @@
   <meta name='theme-color' content='#FD3519' />
   
 
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.104.3" />
 
   
 
@@ -30,7 +30,7 @@
   <meta itemprop="name" content="Build a Time-Series ARIMA Model for Stock Market Forecast in Python">
 <meta itemprop="description" content="Getting started with personal-web"><meta itemprop="datePublished" content="2022-07-01T09:37:55+02:00" />
 <meta itemprop="dateModified" content="2022-07-01T09:37:55+02:00" />
-<meta itemprop="wordCount" content="809">
+<meta itemprop="wordCount" content="810">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -41,7 +41,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile Credit Default Risk Predictor" class="rounded-logo">
+        <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile ABOUT Me" class="rounded-logo">
       </a>
     </div>
     <h2>Belle Shen</h2>
@@ -123,7 +123,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile Credit Default Risk Predictor" class="rounded-logo">
+          <img src='https://bellepmshen.github.io/images/belle_shen_2.jpg' alt="Profile ABOUT Me" class="rounded-logo">
         </a>
       </div>
       <h2>Belle Shen</h2>
@@ -264,7 +264,7 @@ Here is the content in this article:
 - Parameter Notation: <font><i>&ldquo;p&rdquo;</i></font>, the number of lag orders <br>
 - Formula:</p>
 <pre><code>        <figure><img src="/post/images/AR_formula.png"/>
-</figure>
+            </figure>
 
 </code></pre>
 <p><strong>II. MA (Moving Average):</strong><br>
@@ -273,7 +273,7 @@ Here is the content in this article:
 - Parameter Notation: <font><i>&ldquo;q&rdquo;</i></font>, the number of lagged forecast errors<br>
 - Formula:<br></p>
 <pre><code>        <figure><img src="/post/images/MA_formula.png"/>
-</figure>
+            </figure>
 
 </code></pre>
 <p><strong>III. I (Integrated):</strong><br>
@@ -282,14 +282,14 @@ Here is the content in this article:
 - Parameter Notation: <font><i>&ldquo;d&rdquo;</i></font>, the number of difference levels <br>
 - Formula (take the 1st difference level as an example, i.e., d = 1):<br></p>
 <pre><code>        <figure><img src="/post/images/integrated_formula.png"/>
-</figure>
+            </figure>
 
 </code></pre>
 <h3 id="stock-market-forecast-codes-in-pythonbr">Stock Market Forecast Codes in Python:<br></h3>
 <p>In this session, we take Facebook/Meta data via yfinace API to build an ARIMA model to forecast the next minute stock price.<br></p>
 <p>Here is the process flow of codes:</p>
 <pre><code>    <figure><img src="/post/images/process_flow.png"/>
-</figure>
+        </figure>
 
 </code></pre>
 <p><strong>I. Import libraries:</strong><br></p>
@@ -336,7 +336,7 @@ Then, you will add the actual observation of &ldquo;2022-06-27 15:57:00&rdquo; t
 </span></span></code></pre></div><br>
 We train the whole 7-day data with the best (p, d, q) permutation we obtain from hyperparameters tuning job to get a forecast for the next minute (refer to the picture below)!
 <pre><code>    <figure><img src="/post/images/forecast_result.png"/>
-</figure>
+        </figure>
 
 </code></pre>
 <p>Below are the full codes:<br></p>

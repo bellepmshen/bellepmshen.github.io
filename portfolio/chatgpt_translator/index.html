@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'><head>
-  <title>APS Predictor - Belle Shen</title>
-  <link rel='canonical' href='https://bellepmshen.github.io/portfolio/aps_truck/' />
+  <title>Language Translator - Belle Shen</title>
+  <link rel='canonical' href='https://bellepmshen.github.io/portfolio/chatgpt_translator/' />
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <meta name='description' content='This is the description of our sample project' />
@@ -19,18 +19,18 @@
 <link rel="stylesheet" href="https://bellepmshen.github.io/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
 <link rel="stylesheet" href="https://bellepmshen.github.io/syntax.min.css" integrity="" media="screen">
 
-  <meta property="og:title" content="APS Predictor" />
+  <meta property="og:title" content="Language Translator" />
 <meta property="og:description" content="This is the description of our sample project" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bellepmshen.github.io/portfolio/aps_truck/" /><meta property="article:section" content="portfolio" />
-<meta property="article:published_time" content="2020-05-02T19:47:09+02:00" />
-<meta property="article:modified_time" content="2020-05-02T19:47:09+02:00" />
+<meta property="og:url" content="https://bellepmshen.github.io/portfolio/chatgpt_translator/" /><meta property="article:section" content="portfolio" />
+<meta property="article:published_time" content="2023-03-20T19:47:09+02:00" />
+<meta property="article:modified_time" content="2023-03-20T19:47:09+02:00" />
 
 
-  <meta itemprop="name" content="APS Predictor">
-<meta itemprop="description" content="This is the description of our sample project"><meta itemprop="datePublished" content="2020-05-02T19:47:09+02:00" />
-<meta itemprop="dateModified" content="2020-05-02T19:47:09+02:00" />
-<meta itemprop="wordCount" content="5">
+  <meta itemprop="name" content="Language Translator">
+<meta itemprop="description" content="This is the description of our sample project"><meta itemprop="datePublished" content="2023-03-20T19:47:09+02:00" />
+<meta itemprop="dateModified" content="2023-03-20T19:47:09+02:00" />
+<meta itemprop="wordCount" content="188">
 <meta itemprop="keywords" content="" />
 </head>
 <body>
@@ -214,7 +214,7 @@
 
 
 <span  class="active">
-  <a href="https://bellepmshen.github.io/portfolio/aps_truck/">APS Predictor</a>
+  <a href="https://bellepmshen.github.io/portfolio/chatgpt_translator/">Language Translator</a>
   
 </span>
 
@@ -223,7 +223,7 @@
     
     <main id="content" class="portfolio">
 
-<h1>APS Predictor</h1>
+<h1>Language Translator</h1>
 <div class="tags">
   
 
@@ -239,19 +239,13 @@
 
     <span>
       
-          <a href="https://bellepmshen.github.io/techs/random-forest/">Random Forest</a>
+          <a href="https://bellepmshen.github.io/techs/chatgpt/">ChatGPT</a>
         
       <span>- </span>
-          <a href="https://bellepmshen.github.io/techs/gradient-boosting-tree/">Gradient Boosting Tree</a>
+          <a href="https://bellepmshen.github.io/techs/nlp/">NLP</a>
         
       <span>- </span>
-          <a href="https://bellepmshen.github.io/techs/logistic-regression/">Logistic Regression</a>
-        
-      <span>- </span>
-          <a href="https://bellepmshen.github.io/techs/xgboost/">XGBoost</a>
-        
-      <span>- </span>
-          <a href="https://bellepmshen.github.io/techs/sklearn/">Sklearn</a>
+          <a href="https://bellepmshen.github.io/techs/api-call/">API Call</a>
         
       
     </span>
@@ -268,7 +262,7 @@
   </svg>
 </div>
 
-    <a target="_blank" href="https://github.com/bellepmshen/APS_Webpage">https://github.com/bellepmshen/APS_Webpage</a>
+    <a target="_blank" href="https://github.com/bellepmshen/translator_ChatGPT">https://github.com/bellepmshen/translator_ChatGPT</a>
   </div>
 
 
@@ -281,15 +275,28 @@
   </svg>
 </div>
 
-  <span>2021</span>
+  <span>2023</span>
 </div>
 </div>
 
-<img title="APS Predictor" alt="APS Predictor" src="/portfolio/loan-credit/truck_2.jpeg" />
+<img title="Language Translator" alt="Language Translator" src="/portfolio/loan-credit/chatgpt.jpg" />
 
 <!-- This would be a description of your sample project. You can add any content you'd like. -->
-<p>coming soon</p>
-<p><font size = "-2"><i>photo credit: <a href="https://www.defensivedriving.com/blog/share-the-road-how-to-drive-safely-around-big-trucks/">https://www.defensivedriving.com/blog/share-the-road-how-to-drive-safely-around-big-trucks/</a></i></font></p>
+<p><font><b><u>Project Goal</b></u></font><br>
+The goal of this project was to translate a given PDF file (ex: academic paper) into the language you&rsquo;d like by using ChatGPT 3.5 via API call.<br>
+Note: When this project was developed, ChatGPT 4 API call was unavailable.<br></p>
+<p><font><b><u>Library</b></u></font><br>
+Here are the main libraries I used for this projects:
+I used pypdfium2 for extracting texts from a PDF file, NLTK for tokenizing sentences, Pandas for saving the API call log mainly, Pickle for saving
+the translation results, openai for API call.</p>
+<p><font><b><u>API Call</b></u></font><br>
+Since openai API call had request, okens limit and for better translation results, I broke down a document into paragraphs level and here I selected 5 sentences as a paragraph and save it as a txt file. <br>
+Then, iterated all the text files and made API calls to ask ChatGPT to translate each paragraph, and saved it as a pickle.
+The final output txt file would be a single file with all the translated results.<br></p>
+<p><font><b><u>Note</b></u></font><br>
+I found out with clear prompt messages, ChatGPT would perform better.<br></p>
+<p>For detail codes and graphs, please check the GitHub link above 👆<br></p>
+<p><font size = "-3"><i>photo credit: <a href="https://www.pcmag.com/news/more-workers-are-using-chatgpt-and-theyre-not-telling-their-bosses">https://www.pcmag.com/news/more-workers-are-using-chatgpt-and-theyre-not-telling-their-bosses</a></i></font></p>
 
 
 
